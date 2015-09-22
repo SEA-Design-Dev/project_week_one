@@ -1,0 +1,75 @@
+$background-A: #162327;
+$background-B: #05c3f9;
+$background-C: #252525;
+$high-light: #bebebe;
+$med-light: #888888;
+$low-light: #383838;
+$contrast-A: #037fa2;
+
+@import "globals.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "a1-home-header.scss";
+@import "a2-home-top.scss";
+@import "a3-home-middle.scss";
+@import "a4-home-bottom.scss";
+@import "b1-support-download.scss";
+@import "b2-support-features.scss";
+@import "b3-support-reviews.scss";
+@import "c1-screenshots.scss";
+@import "d1-download-more-apps.scss";
+@import "d2-download-our-app.scss";
+@import "e1-pricing-pricing.scss";
+@import "e2-pricing-team.scss";
+@import "f1-reviews-featured.scss";
+@import "f2-reviews-contact.scss";
+@import "f3-reviews-footer.scss";
+
+@import "font.scss";
+@import "color.scss";
+@import "button.scss";
+@import "icon-container.scss";
+@import "icon-font.scss";
+
+// default eliminate list bullets and the empty space on the left
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+//default document font
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+svg {
+  position: absolute;
+}
+
+%section-layouts {
+  position: relative;
+  padding-top: 6em;
+  padding-bottom: 14em;
+  margin: 0 2% 0 2%;
+}
+
+.underlined-heading {
+  margin: 0 auto 8em auto;
+  padding: 0;
+  &-text {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 2em;
+    color: $high-light;
+    margin-bottom: .75em;
+  }
+  &-underline {
+    width: 10%;
+    height: .4em;
+    border: 0;
+    margin: auto;
+    background-color: $med-light;
+  }
+}
