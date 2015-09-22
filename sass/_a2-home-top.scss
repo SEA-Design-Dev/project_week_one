@@ -1,0 +1,40 @@
+//home top styling
+//this includes the The best way....title followed by the video and the 2 phone images
+.home-top {
+	padding-top: 2em;
+	background-color: $background-A;
+}
+.home-h1 {
+	font-size: $large-font-size;
+	padding-top: 2em;
+	margin-top: 0;
+}
+.home-p {
+	color: $primary-font-color;
+	line-height: .2em;
+}
+
+ .home-p-first-sentance {
+	font-size: $tiny-font-size;
+}
+.home-p-second-sentance {
+	font-size: $small-font-size;
+}
+.home-video {
+	p {
+		a {
+			color: $primary-font-color;
+			text-decoration: none;
+			font-size: $small-font-size;
+		}
+	}
+}
+
+.home-video-image {
+
+}
+
+.home-phone-pic {
+	padding-bottom: 2em;
+    margin: 0;
+}

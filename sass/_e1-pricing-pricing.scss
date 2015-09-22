@@ -1,0 +1,81 @@
+.e1-pricing-pricing{
+padding-top: 5%;
+background-color: $background-C;
+text-align: center;
+font-family: 'Roboto', sans-serif;
+color: $high-light;
+padding-bottom: 3.5%;
+}
+
+.e1-pricing-pricing div:nth-of-type(1){
+margin-bottom: 2.7%;
+}
+
+.e1-pricing-pricing>p{
+font-size: 1.1em;
+font-family: 'Roboto', sans-serif;
+}
+.buy-button{
+	border-top: 5px solid $high-light;
+	border-bottom: 5px solid $high-light;
+	border-right: 1px solid $high-light;
+	border-left: 1px solid $high-light;
+	border-radius: 100px;
+	width: 10em;
+	margin: 0 auto;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.price-tag{
+	padding-top: 0em;
+	padding-bottom: 0em;
+	strong{
+		color:$background-B;
+	}
+
+	border-top: 5px solid $high-light;
+	border-bottom: 5px solid $high-light;
+	border-right: 1px solid $high-light;
+	border-left: 1px solid $high-light;
+	border-radius: 100px;
+	width: 5.5em;
+	margin: 0 auto;
+	line-height: 1.3em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.price-tag:hover{
+	strong{
+		color: $high-light;
+		background-color: $background-B;
+	}
+}
+
+.e1-pricing-pricing>table{
+	text-align: center;
+	display: inline-flex;
+	border: 1px solid $high-light;
+	margin: 2%;
+	tr{
+		td:nth-of-type(1){
+			padding-top: 2em;
+		}
+		td:nth-of-type(1):hover{
+			background-color: $background-B;
+			color: $high-light;
+		}
+		td{
+			padding-left: 5em;
+			padding-right: 5em;
+			line-height: 2em;
+			padding-bottom: 2em;
+			a{
+				text-decoration: none;
+				color: $high-light;
+			}
+		}
+	}
+}
