@@ -1,0 +1,51 @@
+//this manages defaults for the UI
+
+// default eliminate list bullets and the empty space on the left 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+//default document font
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  p {
+    font-family: "Raleway";
+    font-size: .5em;
+  }
+}
+
+%svg {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: -1px;
+}
+
+%section-layouts {
+  position: relative;
+  padding-top: 6em;
+  padding-bottom: 14em;
+  margin: 0;
+}
+
+.underlined-heading {
+  margin: 0 auto 8em auto;
+  padding: 0;
+  &-text {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 2em;
+    color: $high-light;
+    margin-bottom: .75em;
+  }
+  &-underline {
+    width: 10%;
+    height: .4em;
+    border: 0;
+    margin: auto;
+    background-color: $med-light;
+  }
+}

@@ -1,0 +1,46 @@
+// help from https://www.youtube.com/watch?v=sDsyHJnkZn0
+.underlined-heading-screenshot{
+  margin: 0 auto 4em auto;
+  padding: 0;
+  &-text {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 2em;
+    color: $high-light;
+    margin-bottom: .75em;
+    margin-top: 0;
+  }
+  &-underline {
+    width: 5%;
+    height: .4em;
+    border: 0;
+    margin: auto;
+    background-color: $med-light;
+  }
+}
+.c1-screenshots {
+  @extend %section-layouts;
+  @include bi-color-background ($background-A, $low-light);
+}
+.c1-image-shown {
+  display: block;
+}
+.c1-image-hidden {
+  display: none;
+}
+.slider-inner {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 2em;
+}
+.left-right{
+  padding-bottom: 2em;
+}
+.c1-right, .c1-left{
+  cursor: pointer;
+}
+@media only screen and (min-width: 600px) {}

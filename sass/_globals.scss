@@ -1,0 +1,26 @@
+//global 
+
+%square {
+  background-color: transparent;
+  height: 12.5em;
+  width: 12.5em;
+  color: $med-light;
+  border-top: .5em solid $med-light;
+  border-bottom: .5em solid $med-light;
+  border-left: .065em solid $med-light;
+  border-right: .065em solid $med-light;
+  display: flex;
+}
+
+%circle {
+	background-color: transparent;
+	height: 12.5em;
+	width: 12.5em;
+	color: $med-light;
+	border-top: .5em solid $med-light;
+	border-bottom: .5em solid $med-light;
+	border-left: .065em solid $med-light;
+	border-right: .065em solid $med-light;
+	border-radius: 50%;
+	display: flex;
+}

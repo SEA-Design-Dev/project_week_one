@@ -1,0 +1,37 @@
+.f3-reviews-footer {
+  @extend %section-layouts;
+  background-color: $background-B;
+  color: $highest-light;
+  & .slant {
+    @extend %svg; 
+    fill: $background-C;
+    background-color: transparent;
+  }
+}
+
+.footer-logo {
+  margin-top: 2em;
+  margin-bottom: 4em;
+  img {
+    width: 25%;
+    height: auto;
+  }
+}
+
+.icon-social-media {
+  display: inline;
+  padding-left: 1%;
+  padding-right: 1%;
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+  transition: transform .25s ease-in-out;
+  &:hover {
+    -webkit-transform: scale(1.25,1.25);
+    transform: scale(1.25,1.25);
+    transition: .25s ease-in-out;  
+  }
+} 
+
+.copyright {
+  margin-top: 2em;
+  margin-bottom: 4em;
+}

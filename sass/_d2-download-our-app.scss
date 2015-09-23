@@ -1,0 +1,77 @@
+.d2-download-our-app {
+  @extend %section-layouts;
+  @include bi-color-background ($low-light, $background-C);
+  background-color: $background-C;
+  font-family: 'Roboto', sans-serif;
+  color: $highest-light;
+  & .slant {
+    @extend %svg;
+    fill: $background-B;
+    background-color: transparent;
+  }
+}
+
+.subscribe-form {
+  color: $highest-light;
+  display: flex;
+  flex-direction: row;
+  input {
+    border: none;
+    border-bottom: 2px solid $background-C; 
+    background: none;
+    color: $highest-light;
+    width: 45%;
+    margin: auto;
+    display: flex;
+    height: 3em;
+    margin-left: 15%;
+   	margin-right: 0%;
+   	min-width: 30%;
+  }
+  .submit-button{
+  	width: 10%;
+  	max-width: 10%;
+  	text-align: center;
+  	background-color: $background-B;
+  	border-radius: 50px;
+  	border: 1px solid rgb(3, 148, 190);
+  	font-weight: bold;
+  	font-family: 'Roboto', sans-serif;
+  	color: $highest-light;
+  	text-decoration: none;
+  	margin-right: 15%
+  }
+}
+
+.d2-img{
+	float: left;
+	margin-left: 25%;
+	margin-right: 0%;
+	margin-top: 0%;
+	margin-bottom: 5%;
+}
+
+.d2-content>p{
+text-align: center;
+margin-top: -10%;
+padding-top: 0%;
+margin-bottom: 0%;
+padding-bottom: 0%;
+}
+
+.underlined-heading{
+	//margin-right: 10%;
+}
+
+.underlined-heading-text{
+	//margin-left: 0%;
+}
+
+.underlined-heading-underline{
+	//margin-right: 65%;
+}
+
+.d2-arrow{
+margin-right: 0%;
+margin-left: 45%;
+}
