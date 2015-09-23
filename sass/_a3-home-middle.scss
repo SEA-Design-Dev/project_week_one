@@ -1,0 +1,56 @@
+//home middle styling
+//this is the "get it for free" title, paragraph, and google play and ios app store buttons.
+.home-middle {
+  @extend %section-layouts;
+  background-color: $background-C;
+  & .slant {
+    @extend %svg;
+    fill: $background-A;
+    background-color: transparent;
+  }
+// =======
+// 	background-color:  $background-C;
+// 	padding-bottom: 5em;
+// >>>>>>> 55e6a4c685071a04b35bc0ecb60600780c4db65e
+}
+.home-arrow {
+	margin-left: 8em;
+	margin-bottom: 0;
+}
+.home-middle-p {
+	@extend %small-font;
+	margin: 0;
+}
+.home-google-ios li{
+	display: inline-block;
+}
+.google-play-button {
+	@extend %google-play-button;
+	//margin auto is overiding these so it doesn't work
+	margin-left: .5em;
+
+}
+.iOS-app-button {
+	@extend %iOS-app-button;
+	//margin auto is overiding these so it doesn't work
+	margin-right: .5em;
+
+}
+.home-google-ios {
+	a {
+		color: $white;
+		text-decoration: none;
+		font-size: $medium-font-size;
+	}
+}
+.icon-Googleplay {
+	position: relative;
+	right: 20em;
+	top: 6em;
+}
+.icon-iOS {
+	position: relative;
+	bottom: 5.5em;
+
+ 
+}

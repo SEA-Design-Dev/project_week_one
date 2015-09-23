@@ -1,0 +1,7 @@
+@mixin bi-color-background ($topColor, $bottomColor) {
+  background-image: linear-gradient(bottom, $topColor 50%, $bottomColor 50%);
+  background-image: -o-linear-gradient(bottom, $topColor 50%, $bottomColor 50%);
+  background-image: -moz-linear-gradient(bottom, $topColor 50%, $bottomColor 50%);
+  background-image: -webkit-linear-gradient(bottom, $topColor 50%, $bottomColor 50%);
+  background-image: -ms-linear-gradient(bottom, $topColor 50%, $bottomColor 50%);
+}

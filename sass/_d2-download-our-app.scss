@@ -1,0 +1,12 @@
+.d2-download-our-app {
+  @extend %section-layouts;
+  @include bi-color-background ($background-A, $low-light);
+  background-color: $background-C;
+  font-family: 'Roboto', sans-serif;
+  color: $highest-light;
+  & .slant {
+    @extend %svg;
+    fill: $background-B;
+    background-color: transparent;
+  }
+}

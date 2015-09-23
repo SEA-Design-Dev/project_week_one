@@ -1,0 +1,56 @@
+//home header styling
+//this includes the appbox logo in the left corner and the navigation bar in the right corner at the very top of the page.
+.home {
+  color: $primary-font-color;
+  margin: 0;
+}
+.home-h1 {
+  margin-bottom: 1em;
+}
+.home-header {
+  padding-top: 5em;
+  background-color: $background-A;
+}
+.home-search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+}
+.home-search input {
+  width: 250px;
+  height: 32px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+.home-search input { text-indent: 32px;}
+.home-search .home-search-box { 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.home-nav {
+	display: inline;
+	float: right;
+  font-size: 3em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+.home-nav ul {
+	display: inline;
+}
+.home-nav li {
+	padding-right: .5em;
+	display: inline;
+}
+.home-nav a {
+	color: $primary-font-color;
+	text-decoration: none;
+}
+.appbox-logo {
+	display: inline;
+  max-width: 100%;
+  margin-right: 50em;
+}
+

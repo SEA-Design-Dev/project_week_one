@@ -1,0 +1,31 @@
+//home bottom styling
+//this includes some amazing features and icons below that
+.home-bottom {
+  @extend %section-layouts;
+  background-color: $low-light;
+  & .slant {
+    @extend %svg;
+    fill: $background-C;
+    background-color: transparent;
+  }
+// }
+// 	background-color: $low-light;
+// 	padding-top: 2em;
+// 	padding-bottom: 2em;
+}
+.home-feature {
+	margin-bottom: 6em;
+}
+ 
+.home-feature figcaption {
+	font-size: $tiny-font-size;
+	max-width: 20em;
+	margin: 0 auto;
+}
+
+//created this because class .underlined-heading-underline doesn't come with margin-bottom. Ideally
+//that class would contain a margin-bottom so it only needs to be applied once.
+.home-feature-laptop {
+	margin-top: 6em;
+}
+
