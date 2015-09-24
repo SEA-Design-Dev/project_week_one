@@ -1,0 +1,42 @@
+@mixin flex-box($align: null, $wrap: null, $direction: null, $justify: null, $basis: null) {
+  @include display(flex);
+  @include align-items($align);
+  @include flex-wrap($wrap);
+  @include flex-direction($direction);
+  @include justify-content($justify);
+  @include flex-basis($basis);
+}
+
+// Example flex-box mixin use:
+// (Provide desired flex-box paramters, not necessary to satisfy all arguments)
+
+// .flex-me {
+//   @include flex-box($wrap: wrap, $justify: space-between);
+// }
+
+@mixin icon-border($radius: 50%, $color: border('primary')) {
+  border-width: 5px 1px;
+  border-style: solid;
+  border-color: $color;
+  border-radius: $radius;
+}
+
+@mixin header-underline($text-color: text(primary), $underline-color: border(primary)) {
+  font-size: $font-larger;
+  font-weight: $font-weight-l;
+  &:after {
+    content: "";
+    display: block;
+    margin: 1em auto 0;
+    width: 2.618em;
+    height: .15em;
+    background-color: $underline-color;
+  }
+}
+
+@mixin logo-underline($size: null) {
+  background-image: url('/img/logo-path.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: $size;
+}

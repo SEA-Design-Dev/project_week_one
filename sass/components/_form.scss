@@ -1,0 +1,48 @@
+form {
+ ::-webkit-input-placeholder {
+  padding-bottom: 1em;
+   color: text('placeholder');
+   font-size: $font-small;
+
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: text('placeholder');
+   font-size: $font-small;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: text('placeholder');
+   font-size: $font-small;
+}
+
+:-ms-input-placeholder {
+   color: text('placeholder');
+   font-size: $font-small;
+}
+
+  input,
+  textarea {
+    padding-bottom: 1em;
+    color: text(primary);
+    font-size: $font-large;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    border-bottom: 1px solid text('placeholder');
+    background: transparent;
+  }
+
+  input {
+    margin-bottom: 2em;
+    width: 20%;
+  }
+
+  textarea {
+    width: 40%;
+    height: 10em;
+    resize: none;
+    margin-bottom: 2em;
+  }
+}
