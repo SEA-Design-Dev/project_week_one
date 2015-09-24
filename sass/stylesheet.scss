@@ -1,0 +1,32 @@
+//all scss files are imported here
+
+@import "font.scss";
+@import "color.scss";
+@import "globals.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "normalize.scss";
+@import "config.scss";
+
+@import "a1-home-header.scss";
+@import "a2-home-top.scss";
+@import "a3-home-middle.scss";
+@import "a4-home-bottom.scss";
+@import "b1-support-download.scss";
+@import "b2-support-features.scss";
+@import "b3-support-reviews.scss";
+@import "c1-screenshots.scss";
+@import "d1-download-more-apps.scss";
+@import "d2-download-our-app.scss";
+@import "e1-pricing-pricing.scss";
+@import "e2-pricing-team.scss";
+@import "f1-reviews-featured.scss";
+@import "f2-reviews-contact.scss";
+@import "f3-reviews-footer.scss";
+
+
+@import "button.scss";
+@import "icon-container.scss";
+@import "icon-font.scss";
+

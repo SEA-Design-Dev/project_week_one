@@ -1,0 +1,12 @@
+.b2-support-features { 
+  @extend %section-layouts;
+  background-color: $background-A;
+  & .slant {
+    @extend %svg;
+    fill: $background-B;
+    background-color: transparent;
+  }
+}
+.b2-iphone-pic {
+	margin-bottom: 2em;
+}

@@ -1,0 +1,123 @@
+.e1-pricing-pricing{
+	@extend %section-layouts;
+	background-color: $background-C;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: $high-light;
+	& .slant {
+	  fill: $background-C;
+	  background-color: transparent;
+	}
+}
+
+.e1-pricing-pricing div:nth-of-type(1){
+margin-bottom: 2.7%;
+}
+
+.e1-pricing-pricing>p{
+font-size: 1.1em;
+font-family: 'Roboto', sans-serif;
+}
+.buy-button{
+	border-top: 5px solid $high-light;
+	border-bottom: 5px solid $high-light;
+	border-right: 1px solid $high-light;
+	border-left: 1px solid $high-light;
+	border-radius: 100px;
+	width: 10em;
+	margin: 0 auto;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.package-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	ul {
+		margin-top: 5em;
+	}
+}
+
+.package-level{
+	z-index:25;
+	padding-bottom: 3em !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	h1 {
+		font-weight: lighter;
+		font-size: 1em;
+		line-height: 3;
+	}
+}
+
+.center-lock {
+	position: relative;
+	margin: auto;
+	height: .5em;
+}
+
+.price-tag{
+	position: relative;
+	z-index: 100;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	border-top: 5px solid $high-light;
+	border-bottom: 5px solid $high-light;
+	border-right: 1px solid $high-light;
+	border-left: 1px solid $high-light;
+	border-radius: 100px;
+	background-color: $background-C;
+	opacity: 1;
+	width: 5.5em;
+	line-height: 1.3em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	strong {
+		color: $background-B;
+	}
+}
+
+.e1-pricing-pricing > article {
+	text-align: center;
+	display: inline-flex;
+	border: 1px solid $high-light;
+	margin: 2%;
+	justify-content: center;
+	flex-direction: column;
+	.package-level {
+		border-bottom: 1px solid $high-light;
+	}
+	li {
+		padding-left: 5em;
+		padding-right: 5em;
+		line-height: 2em;
+		padding-bottom: 2em;
+		a {
+			text-decoration: none;
+			color: $high-light;
+		}
+	}
+}
+
+.e1-pricing-pricing>article:hover {
+	.package-level { 
+	background-color: $background-B;
+	color: $high-light;
+	}
+	.price-tag {
+	background-color: $background-B;
+	color: $high-light;
+		strong {
+		color: $high-light;
+		}
+	}
+	.buy-button {
+	background-color: $background-B;
+	color: $high-light;
+	border-color: $background-B;
+	}
+}

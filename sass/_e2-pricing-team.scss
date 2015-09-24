@@ -1,0 +1,48 @@
+.e2-pricing-team{
+  @extend %section-layouts;
+  background-color: $background-B;
+  font-family: 'Roboto', sans-serif;
+  color: $highest-light;
+  & .slant {
+    @extend %svg;
+    fill: $background-C;
+    background-color: transparent;
+  }
+}
+
+.e2-pricing-team h1{
+font-size: 2em;
+font-weight: 400;
+margin-bottom: 0%;
+}
+
+.e2-pricing-team p{
+font-size: 1.1em;
+line-height: 1em;
+}
+
+.e2-pricing-team div:nth-of-type(1){
+  padding-top: 3%;
+}
+
+.e2-pricing-team ul{
+margin-top: 2%;
+display: inline-flex;
+list-style: none;
+}
+
+.e2-pricing-team ul>li{
+display: inline-block;
+margin: 30px; 
+}
+
+.e2-pricing-team div:nth-of-type(2)>img{
+margin-left: 22%;
+margin-top: -1.5%;
+}
+
+.e2-arrow:after{
+  content: url(./../img/vertical-arrow.png);
+  position: absolute;
+  top: 13.5em;
+}

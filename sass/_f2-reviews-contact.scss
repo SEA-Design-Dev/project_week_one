@@ -1,0 +1,86 @@
+.f2-reviews-contact {
+  @extend %section-layouts;
+  font-family: "Raleway", sans-serif;
+  background-color: $background-C;
+  color: $high-light;
+  & .slant {
+    @extend %svg;
+    fill: $low-light;
+    background-color: transparent;
+  }
+  .underlined-heading {
+    margin: 0 auto 8em auto;
+  }
+}
+
+.container-icon {
+  margin: auto;
+}
+
+.contact-info {
+  margin-bottom: 6em;
+  li {
+    margin-bottom: 2em;
+  }
+}
+
+%contact-presentation {
+  display: flex;
+  border: none;
+  border-bottom: 2px solid $low-light; 
+  background: none;
+  color: $low-light;
+}
+.contact-form {
+  @extend %contact-presentation;
+  width: 100%;
+  margin: auto;
+  flex-direction: column;
+}
+.submit-button {
+  color: $highest-light;
+  background-color: transparent;
+  border-top: 3px solid $high-light;
+  border-bottom: 3px solid $high-light;
+  border-right: 1px solid $high-light;
+  border-left: 1px solid $high-light;
+  border-radius: 10%/50%;
+  width: 10em;
+  &:hover {
+    background-color: $background-B;
+    border-top: 3px solid $contrast-B;
+    border-bottom: 3px solid $contrast-B;
+    border-right: 1px solid $contrast-B;
+    border-left: 1px solid $contrast-B;
+  }
+}
+.contact-form-first-line {
+  @extend %contact-presentation;
+  flex-direction: row;
+  height: 3em;
+  & input {
+    @extend %contact-presentation;
+    width: 100%;
+  }
+}
+textarea {
+  @extend %contact-presentation;
+  height: 9em;
+  // width: 75%;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: $low-light;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: $low-light;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: $low-light;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: $low-light;
+}
+

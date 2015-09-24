@@ -1,0 +1,132 @@
+.b3-support-reviews{
+  background: $background-B;
+  color: $white;
+  padding-bottom: 5em;
+  padding-top: 5em;
+}
+.reviews-container{
+  margin: auto;
+}
+.b3-support-reviews {
+ h1 {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 3em;
+ }
+ h2, p {
+  font-family: "Roboto";
+  font-style: lighter;
+  font-size: 2em;
+  }
+}
+.icon-title{
+  display: flex;
+  -webkit-display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.container-icon-review{
+  background-color: transparent;
+  height: 100px;
+  width: 100px;
+  border-top: 8px solid transparent;
+  border-bottom: 5px solid $white;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  span {
+    align-items: center;
+    color: $white;
+    font-size: 2em;
+  }
+}
+// .individual {
+//   display: flex;
+//   justify-content: center;
+//   justify-direction: row;
+//   img {
+//     margin-top: 3.5%;
+//     margin-right: 2%;
+//   }
+// }
+// .individual-info {
+//   display: inline;
+//   text-align: left;
+//   margin-left: 0;
+//   margin-left: 0;
+// }
+
+
+
+.carousel-outer-reviews {
+  width: 900px;
+  height: 400px;
+  display: block;
+  position: relative;
+  margin: auto;
+}
+.carousel-inner-reviews{
+  width: 900px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  margin: auto;
+}
+.review-text-display {
+  width: 900px;
+  height: 400px;
+  background: $background-B;
+    p {
+      position: relative;
+      display: inline;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+}
+.carousel-inner-reviews {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.review-info {
+  margin-top: 0;
+  width: 240px;
+  height: 120px;
+  background: $highest-light;
+  display: block;
+  // h1 {
+  //   font-size: .5em;
+  // }
+  // ul {
+  //   text-align: left;
+  //   font-size: .5em;
+  //   margin-top: 0;
+  //   li {
+  //     padding-top: 1em;
+  //     padding-left: 1em;
+  //   }
+  // }
+}
+.icon-star{
+  color: $bright-rating;
+}
+
+.b3-support-reviews {
+  @extend %section-layouts;
+  background-color: $background-B;
+  font-family: 'Roboto', sans-serif;
+  color: $highest-light;
+  & .slant {
+    @extend %svg;
+    fill: $background-A;
+    background-color: transparent;
+  }
+}
+

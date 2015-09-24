@@ -1,0 +1,17 @@
+.container-icon {
+  background-color: transparent;
+  height: 200px;
+  width: 200px;
+  color: $med-light;
+  border-top: 8px solid $med-light;
+  border-bottom: 8px solid $med-light;
+  border-left: 1px solid $med-light;
+  border-right: 1px solid $med-light;
+  border-radius: 50%;
+  display: flex;
+  p {
+    align-items: center;
+    color: $background-B;
+    font-size: 4em;
+  }
+}

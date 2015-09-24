@@ -1,0 +1,191 @@
+// // Built using the teachings from...
+
+// // https://www.youtube.com/watch?v=0iP8YwTo7To
+.carousel-2 {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.d1-download-more-apps{
+  background: $background-B;
+  padding-bottom: 5em;
+}
+.underlined-heading-download{
+  margin: 0 auto 4em auto;
+  padding: 0;
+  &-text {
+    margin-top: 0;
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 2em;
+    color: $highest-light;
+    margin-bottom: .75em;
+  }
+  &-underline {
+    width: 5%;
+    height: .4em;
+    border: 0;
+    margin: auto;
+    background-color: $highest-light;
+  }
+}
+.pager{
+  display:flex;
+  flex-direction: column;
+
+  cursor: pointer;
+  position: absolute;
+  z-index: 1999;
+}
+.pager a {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  margin: 10px;
+  font-size: .0em;
+  color: transparent;
+}
+.pager a.activeSlide {
+  background-color: #fff;
+}
+.carousel-outer-download {
+  width: 240px;
+  height: 420px;
+  display: block;
+  position: relative;
+  margin: auto;
+}
+.carousel-inner-download{
+  width: 240px;
+  height: 420px;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  margin: auto;
+}
+.app-img-display {
+  width: 240px;
+  height: 300px;
+  background: $high-light;
+  img {
+    z-index: -10;
+  }
+  p {
+    display: none;
+  }
+  &:hover{
+    background: $low-light;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    p {
+      position: relative;
+      display: inline;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+}
+.carousel-inner-download {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.app-info {
+  margin-top: 0;
+  width: 240px;
+  height: 120px;
+  background: $highest-light;
+  display: block;
+  h1 {
+    font-size: .5em;
+  }
+  ul {
+    text-align: left;
+    font-size: .5em;
+    margin-top: 0;
+    li {
+      padding-top: 1em;
+      padding-left: 1em;
+    }
+  }
+}
+.icon-star{
+  color: $bright-rating;
+}
+.carousel-outer-download-2,.carousel-outer-download-3, .carousel-outer-download-4, {
+  display: none;
+}
+
+.d1-download-more-apps {
+  @extend %section-layouts;
+  background-color: $background-B;
+}
+@media only screen and (min-device-width: 768px)  {
+  .carousel-outer-download-2 {
+    width: 240px;
+    height: 420px;
+    display: block;
+    position: relative;
+    margin: auto;
+    display: inline;
+  }
+  .carousel-inner-download-2{
+    width: 240px;
+    height: 420px;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    margin: auto;
+  }
+}
+@media only screen and (min-device-width: 1200px)  {
+
+  .carousel-outer-download-3 {
+    width: 240px;
+    height: 420px;
+    display: block;
+    position: relative;
+    margin: auto;
+    display: inline;
+  }
+  .carousel-inner-download-3{
+    width: 240px;
+    height: 420px;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    margin: auto;
+  }
+    .carousel-outer-download-4 {
+    width: 240px;
+    height: 420px;
+    display: block;
+    position: relative;
+    margin: auto;
+    display: inline;
+  }
+  .carousel-inner-download-4{
+    width: 240px;
+    height: 420px;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    margin: auto;
+  }
+}
+
+
