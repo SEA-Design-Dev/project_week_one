@@ -1,0 +1,91 @@
+[data-section="download-app"] {
+  background: linear-gradient(185deg, color(primary) 0%,
+                                      color(primary) calc(50% + 7vw),
+                                      color(secondary) calc(50% + 7vw),
+                                      color(secondary) 100%);
+  padding: 4em 0;
+
+  & img  {
+    display: none;
+
+    @media only screen and (min-width: $break) {
+      padding-left: 10%;
+      display: inline-block;
+      overflow: none;
+      width: 35%;
+      height: auto;
+    }
+  }
+
+  .download-text {
+    padding-top: 2em;
+    width: 90%;
+    margin: 0 5%;
+    text-align: center;
+
+    button {
+      margin-top: 2em;
+
+      @media only screen and (min-width: $break) {
+        margin-top: 0;
+      }
+    }
+
+    @media only screen and (min-width: $break) {
+      width: 50%;
+      text-align: left;
+
+      input {
+          display: inline-block;
+          width: 70%;
+        }
+
+      button {
+        float: right;
+      }
+    }
+
+    h1 {
+      padding-bottom: 3em;
+
+      @media only screen and  (min-width: $break) {
+        padding-bottom: 2em;
+      }
+    }
+
+    ul {
+      width: 80%;
+
+      @media only screen and  (min-width: $break) {
+        width: 100%;
+        @include flex-box($justify: flex-start);
+        & li {
+          min-width: 14rem;
+        }
+        &:first-child {
+          margin-right: 1em;
+        }
+      }
+    }
+
+    & p {
+      margin-left: 0;
+
+      @media only screen and (min-width: $break) {
+        width: 100%;
+      }
+    }
+
+    aside {
+      width: 100%;
+      padding-top: 3em;
+
+      @media only screen and (min-width: $break) {
+        width: 68%;
+        padding-top: 10em;
+      }
+    }
+  }
+}
+
+

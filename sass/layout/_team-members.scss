@@ -1,0 +1,29 @@
+[data-section="team-members"] {
+  @extend %background-accent;
+  @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: space-around);
+  padding: 5% 10%;
+
+  h1 {
+    @include order(1);
+    @include flex-basis(100%);
+    text-align: center;
+    margin: 0;
+  }
+
+  p {
+    @include order(2);
+    text-align: center;
+  }
+
+  ul {
+    @include order(3);
+    @include flex-basis(100%);
+    @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: space-around);
+    margin: 5% 1% 2% 1%;
+
+    li {
+      max-width: 100%;
+      margin-bottom: 1.5em;
+    }
+  }
+}

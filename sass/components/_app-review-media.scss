@@ -1,0 +1,9 @@
+.app-review-media {
+  @include flex-box($align: center, $justify: center);
+  @extend %figcaption-text;
+  figcaption {
+    display: inline-block;
+    text-align: left;
+    margin-left: 0.5em;
+  }
+}
