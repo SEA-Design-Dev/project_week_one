@@ -1,0 +1,51 @@
+// --- MOBILE NAV BAR --- //
+// THIS IS MOBILE VIEW
+@media screen and (max-width: 50em) {
+	.show-menu {
+		display: block;
+		text-decoration: none;
+		background: $color-background-header;
+		color: $color-text-light;
+		text-align: center;
+		padding: 1em 0;
+		width: 82%;
+	}
+	input[type=checkbox]:not(:checked) ~
+		.menu {
+			display: none;
+		}
+	input[type=checkbox]:checked ~
+	.menu {
+		padding-top: 1em;
+		display: block;
+		a {
+			display: block;
+			text-align: center;
+			text-decoration: none;
+			color: $color-text-light;
+			padding: 0.5em;
+			&:hover {
+				color: $color-link-button-h;
+			}
+		}
+	}
+}
+// THIS IS BIG SCREEN
+@media screen and (min-width: 50em) {
+	.show-menu {
+		display: none;
+	}
+	.menu {
+		display: inline;
+		float: right;
+		text-align: right;
+		a &:hover + .hidden, .hidden:hover {
+			display: block;
+		}
+		li {
+			display: inline-block;
+			padding-top: 1.5em;
+			padding-right: 1em;
+		}
+	}
+}

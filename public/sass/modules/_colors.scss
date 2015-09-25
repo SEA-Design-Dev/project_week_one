@@ -1,0 +1,64 @@
+//////////color-var/////////////
+$color-1: #000f13; // almost black
+$color-2: #05c3f9; // theme color
+$color-3: #ffffff; // white
+$color-4: #888888; // dark gray
+$color-5: #666666; // darkest gray
+$color-6: #000000; // black
+$color-7: darken($color-2, 15%); // dark theme color
+$color-8: #f7f7f7; // light gray
+$color-9: #232323; // darkest gray
+$color-10: #313131; // dark gray
+$color-11: #c7c7c7;  // very light gray
+
+/////////color-var-elements///////////
+
+//color-link-buttons
+$color-link-button: $color-5;
+$color-link-button-background: $color-3;
+$color-link-button-text: $color-6;
+
+//icon-color
+$color-icon-circle: $color-4;
+$color-icon-semicircle: $color-3;
+$color-icon: $color-2;
+
+//background-color
+$color-background-header: $color-1;
+$color-background-footer: $color-9;
+$color-background-light: $color-3;
+$color-background-medium: $color-8;
+$color-background-theme: $color-2;
+$color-background-dark: $color-10;
+
+//text-color
+$color-text-light: $color-3;
+$color-text-medium-light: $color-8;
+$color-text-dark: $color-6;
+$color-text-medium: $color-5;
+$color-text-theme: $color-2;
+
+//Discounted Pricing
+$color-pricing-border: $color-4;
+
+/////////////hover-colors///////////
+
+//color-link-buttons
+$color-link-button-h: $color-2;
+$color-link-button-background-h: $color-7;
+$color-link-button-text-h: $color-3;
+
+//icon-color
+$color-icon-circle-h: $color-2;
+$color-icon-h: $color-4;
+
+//Some Amazing Features
+$color-icon-background-h: $color-3;
+
+//Discounted Pricing
+$color-icon-circle-h: $color-2;
+$color-background-price-h: $color-8;
+
+//borders
+$color-border: $color-11;
+$color-border-h: $color-2;

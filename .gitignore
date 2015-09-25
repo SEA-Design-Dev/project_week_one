@@ -24,3 +24,10 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#Node Modules
+node_modules/
+
+public/css/**/*.css
+
+playground.html

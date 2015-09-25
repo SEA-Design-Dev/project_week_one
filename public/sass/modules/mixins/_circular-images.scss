@@ -1,0 +1,25 @@
+@mixin circular-frame($size) {
+  position: relative;
+  display: block;
+  width: $size;
+  height: $size;
+  border: 2px solid $color-7;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+  }
+}
+@mixin sm-circular-frame($size) {
+  @include circular-frame($size);
+  width: $size;
+  height: $size;
+  img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+  }
+}

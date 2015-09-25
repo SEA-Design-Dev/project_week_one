@@ -1,0 +1,29 @@
+.video-section {
+  text-align: center;
+  position: relative;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+
+  @media screen and (min-width: 1030px) {
+    margin-bottom: 2em;
+    padding-top: 3em;
+  }
+  h1 {
+    font: $head-big-medium-font;
+    color: $color-text-light;
+    margin-bottom: 2em;
+    .accent-bar-C {
+      background-color: $color-text-light;
+    }
+  }
+  video {
+    width: 90%;
+    @media only screen and (min-width: 550px) {
+      width: 65%;
+    }
+    @media screen and (min-width: 1030px) {
+      margin-bottom: 4em;
+    }
+  }
+}
+

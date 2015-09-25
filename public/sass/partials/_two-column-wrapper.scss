@@ -1,0 +1,126 @@
+.two-column-wrapper {
+  @include flexbox;
+  font: $head-small-light-font;
+  // phone img
+  img {
+    display: none;
+    @media screen and (min-width: 50em) {
+      display: block;
+    }
+  }
+  // arrow graphic
+  .arrow-position-wrapper {
+    margin-top: 0;
+    @media screen and (min-width: 50em) {
+      display: none;
+    }
+  }
+  .drawn-arrow-blk {
+    bottom: -3.5em;
+    left: 5em;
+  }
+  .drawn-arrow-blk:before {
+    -webkit-transform: rotate(-35deg) scaleX(-1);
+    transform: rotate(-35deg) scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  // all column items
+  .column-item {
+    @include flexbox;
+    position: relative;
+    margin: 0;
+    .info {
+      padding-top: 0;
+      width: 15em;
+      h3 {
+        margin-bottom: 1em;
+        margin-top: 0.4em;
+        font-weight: 700;
+      }
+      p {
+        color: $color-4;
+        font-size: .8em;
+        line-height: 1.4;
+        padding-bottom: 2em;
+        margin-top: 0.5em;
+      }
+    }
+    .sm-circular-eclipse-border {
+      color: $color-2;
+      &:hover {
+        color: $color-4;
+      }
+      &:before {
+        font-size: 2em;
+      }
+    }
+    .animated-dots {
+      position: absolute;
+    }
+  }
+  // column styles
+  %column {
+    @include flexbox;
+    width: 23em;
+    margin: 0;
+    @media screen and (min-width: 50em) {
+      margin: 2em 0;
+    }
+    align-content: space-around;
+    li {
+      margin-top: 1em;
+    }
+    .animated-dots {
+      display: none;
+      @media screen and (min-width: 50em) {
+        display: block;
+        position: absolute;
+        top: 6em;
+      }
+    }
+  }
+  // left column
+  .column-one-list {
+    @extend %column;
+    @media screen and (min-width: 50em) {
+      margin-right: 1em;
+    }
+    li {
+      text-align: right;
+      @media screen and (min-width: 50em) {
+        margin-right: 1em;
+      }
+    }
+    p {
+      text-align: right;
+    }
+    .animated-dots {
+      right: 12%;
+    }
+  }
+  // right column
+  .column-two-list {
+    @extend %column;
+    padding-top: 3.5em;
+    @media screen and (min-width: 50em) {
+      margin-left: 1em;
+      padding-top: 0;
+    }
+    @media screen and (max-width: 1075px) {
+      margin-bottom: -5em;
+    }
+    li {
+      text-align: left;
+      @media screen and (min-width: 50em) {
+      margin-left: 1em;
+      }
+    }
+    p {
+      text-align: left;
+    }
+    .animated-dots {
+      right: 86%;
+    }
+  }
+}

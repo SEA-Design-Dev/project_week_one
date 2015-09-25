@@ -1,0 +1,45 @@
+// Styling for the drawn arrows //
+
+.arrow-position-wrapper {
+  position: relative;
+  width: 50%;
+  margin: 0 25%;
+}
+.drawn-arrow-wh, .drawn-arrow-blk {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  @media screen and (min-width: 50em) {
+    right: 0;
+    bottom: 0;
+  }
+}
+.drawn-arrow-wh:before {
+  content: " ";
+  display: inline-block;
+  width: 42px;
+  height: 83px;
+  background: url("../assets/arrow.svg");
+  background-repeat: no-repeat;
+}
+.drawn-arrow-blk:before {
+  content: " ";
+  display: inline-block;
+  width: 62px;
+  height: 22px;
+  background: url("../assets/whiteArrow.svg");
+  background-repeat: no-repeat;
+}
+.drawn-arrow-blk-rotate::after {
+  background: url("../assets/arrowblack.svg") no-repeat;
+  background-size: contain;
+  content: '';
+  height: 3em;
+  width: 2em;
+  margin-left: 2em;
+  display: inline-block;
+  margin-left: 19em;
+  margin-top: -2em;
+  transform: rotate(-30deg);
+}
+

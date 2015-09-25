@@ -1,0 +1,110 @@
+.new-feature-wrapper {
+  padding: 1em;
+  position: relative;
+  z-index: -7;
+  @include flexbox;
+  @media only screen and (min-width: 550px) {
+    padding: 1em 2em 1em 2em;
+  }
+  @media screen and (min-width: 1030px) {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+.feature-text-wrapper {
+  width: 80%;
+  @include flex_item;
+  @media only screen and (min-width: 550px) {
+    margin: 2em;
+
+  }
+  @media screen and (min-width: 1030px) {
+    width: 40%;
+    max-width: 53%;
+  }
+  @media screen and (min-width: 900px) {
+    max-width: 50%;
+
+  }
+  .sm-eclipse-border {  // small button
+    font: $small-button-link-font;
+    background-color: $color-link-button-background;
+    width: 5em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    &:hover {
+      background-color: $color-link-button-background-h;
+    }
+  }
+  h2 {
+    text-align: left;
+    color: $color-text-light;
+    font: $head-big-medium-font;
+    margin-bottom: 1em;
+  }
+  p {
+    text-align: left;
+    font: $text-light-font;
+    color: $color-text-light;
+    margin-bottom: 3em;
+  }
+  aside {
+    @include flexbox;
+    color: $color-text-light;
+    width: 18em;
+    .download-text-wrapper {
+      width: 10em;
+      padding-top: 1em;
+      @include flex_item;
+      &:after {
+        @include pic-insert(url("../assets/arrow.svg"), contain);
+        padding-top: 1em;
+        margin-left: 3em;
+
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        -ms-transform: rotate(-60deg) scaleX(-1); /* IE 9 */
+        -webkit-transform: rotate(-60deg) scaleX(-1); /* Chrome, Safari, Opera */
+        transform: rotate(-60deg) scaleX(-1);
+      }
+      h3 {
+        margin: 0;
+        display: inline;
+        font: $text-bold-font;
+      }
+    }
+    .download-icons-wrapper {
+      @include flex_item;
+      figure {
+        display: inline-block;
+        text-align: center;
+        padding-left: 1em;
+      }
+      figcaption {
+        font: $text-small-light-font;
+        margin-top: 1em;
+      }
+    }
+  }
+}
+.feature-img-wrapper {
+  @include flex_item;
+  img {
+    display: none;
+    position: relative;
+    z-index: 1;
+    @media only screen and (min-width: 550px) {
+      display: initial;
+      width: 28em;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (min-width: 1030px) {
+    margin-top: 2em;
+  }
+}
+.feature-text-wrapper {
+  a {
+    border-color: $color-7;
+  }
+}
