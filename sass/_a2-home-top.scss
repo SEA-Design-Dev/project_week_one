@@ -1,0 +1,128 @@
+//home top styling
+//this includes the The best way....title followed by the video and the 2 phone images
+.a2-home-top {
+	@extend %section-layouts;
+	background-color: $background-A;
+	padding-top: 2em;
+}
+.home-p {
+	color: $primary-font-color;
+	line-height: 1.5em;
+}
+.home-intro-vid {
+	color: $primary-font-color;
+	text-decoration: none;
+	font-size: $small-font-size;
+}
+
+
+@media (max-width: 1040px) {
+
+	.a2-home-top {
+		padding-top: 2em;
+	}
+	.home-p-first-sentance {
+		font-size: .5em;
+	}
+	.home-p-second-sentance {
+		font-size: $tiny-font-size;
+	}
+	.home-video-border {
+		padding-top: .6em;
+		padding-bottom: .6em;
+		border: .1em solid $white;
+		background-color: $low-light;
+		width: 5em;
+		max-width: 50%;
+	}
+	.icon-play {
+		font-size: 8em;
+		color: $background-B;
+		z-index: 10;
+		top: 7.5em;
+		margin: 0 auto;
+	}
+	.home-video {
+		margin-top: 1em;
+	}
+	.home-phone-pic {
+		padding-bottom: 2em;
+	    margin: 0;
+	    margin-top: 2em;
+	} 
+}
+
+@media (min-width: 1040px) {
+
+	.home-p-first-sentance {
+		font-size: $small-font-size;
+	}
+	.home-p-second-sentance {
+		font-size: 1.5em;
+	}
+	.home-h1-section, .home-video {
+		text-align: left;
+	}
+	.a2-h1 {
+		font-size: $medium-font-size;
+	}
+	.home-p-first-sentance {
+		font-size: $tiny-font-size;
+		
+	}
+	.home-p-second-sentance {
+		font-size: $small-font-size;
+		
+	}
+	.home-video {
+		margin-top: 4em;
+	}
+	.home-video-border {
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
+		padding-right: 2.5em;
+		padding-left: 2.5em;
+		margin: 0;
+		border: .3em solid $white;
+		max-width: 12%;
+		background-color: $med-light;
+		float: left;
+
+	}
+	.icon-play {
+		
+		color: $background-B;
+		margin: 0 auto;
+	}
+	.blue-phone {
+		max-width: 100%;
+		height: auto;
+	}
+	.home-phone-pic {
+		width: 20em;
+		height: 20em;
+	}
+
+	.home-h1-section {
+		padding-top: 4em;
+	}
+	.a2-home-top {
+		display:flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: space-around;
+	    align-content: flex-start;
+	    align-items: flex-start;
+	    padding-top: 4em;
+	}
+	.home-video {
+		display:flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: left;
+	    align-content: flex-start;
+	    align-items: center;
+	}
+
+}
+

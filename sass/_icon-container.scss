@@ -1,0 +1,35 @@
+.container-icon {
+  background-color: transparent;
+  height: 6em;
+  width: 6em;
+  color: $med-light;
+  border-top: 8px solid $med-light;
+  border-bottom: 8px solid $med-light;
+  border-left: 1px solid $med-light;
+  border-right: 1px solid $med-light;
+  border-radius: 50%;
+  display: flex;
+  p {
+    align-items: center;
+    color: $background-B;
+    font-size: 4em;
+  }
+  @media only screen and (min-device-width: 768px) {
+    height: 5em;
+    width: 5em;
+    border-top: 6px solid yellow;
+    border-bottom: 6px solid yellow;
+    p {
+    font-size: 2em;
+    }
+  } 
+  @media only screen and (min-device-width: 1200px) {
+    height: 5em;
+    width: 5em;
+    border-top: 4px solid red;
+    border-bottom: 4px solid red;
+    p {
+    font-size: 2em;
+    }
+  }
+}

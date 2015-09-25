@@ -1,0 +1,66 @@
+.b2-support-features {
+  @extend %section-layouts;
+  background-color: $background-A;
+  & .slant {
+    @extend %svg;
+    fill: $background-B;
+    background-color: transparent;
+  }
+}
+.b2-icon-info1, .b2-icon-info2  {
+  color: $white;
+}
+.b2-iphone-img {
+  display: none;
+}
+@media only screen and (min-device-width: 768px)  {
+  .b2-full-page {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .features1, .features2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .b2-icon-info1 {
+    text-align: right;
+    h1 {
+      font-size: 1.5em;
+    }
+    figcaption {
+      font-size: .90em;
+    }
+  }
+  .b2-icon-info2 {
+    text-align: left;
+    h1 {
+      font-size: 1.6em;
+    }
+    figcaption {
+      font-size: .90em;
+    }
+  }
+  .dot-box {
+  }
+  .dot {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 10px;
+    height: 10px;
+    background-color: $med-light;
+    border: 1px solid $med-light;
+    border-radius: 50%;
+  }
+  .b2-iphone-img {
+    display: inline;
+  }
+  .b2-icon-box1 {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (min-device-width: 1200px)  {
+}

@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'appbox-icons';
+  src:url('../fonts/icomoon.eot?-k1gnej');
+  src:url('../fonts/icomoon.eot?#iefix-k1gnej') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?-k1gnej') format('truetype'),
+  url('../fonts/icomoon.woff?-k1gnej') format('woff'),
+  url('../fonts/icomoon.svg?-k1gnej#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'appbox-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+$icons:
+  (star '\e601')
+  (star-outline '\e614') 
+  (seek '\e603')
+  (play '\f04b')
+  (Googleplay '\f04b')
+  (iOS '\f179')
+  (android '\e608')
+  (desktop '\f108')
+  (beaker '\e607')
+  (airplane '\e604')
+  (cog '\e606')
+  (android '\e608')
+  (cubes '\f1b3')
+  (laptop '\f109')
+  (flag '\e613')
+  (comment '\f075')
+  (coffee '\f0f4')
+  (rightquote '\e612')
+  (pin '\e60c')
+  (phone '\e60e')
+  (email '\e60d')
+  (facebook '\e609')
+  (twitter '\e60a')
+  (google-plus '\e60b')
+  (pinterest '\e611')
+  (behance '\e60f')
+  (dribbble '\e610')
+  ;
+  
+@each $icon in $icons {
+  .icon-#{nth($icon, 1)}:before {
+    content:nth($icon, 2);
+  }
+}
+

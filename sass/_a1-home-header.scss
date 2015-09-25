@@ -1,0 +1,74 @@
+//home header styling
+//this includes the appbox logo in the left corner and the navigation bar in the right corner at the very top of the page.
+.home {
+  color: $primary-font-color;
+  margin: 0;
+}
+.home-h1 {
+  margin-bottom: 1em;
+}
+.a1-home-header {
+  background-color: $background-A;
+  padding-bottom: .5em;
+}
+.home-nav {
+	display: inline;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+.home-nav li {
+	display: inline;
+}
+.home-nav-a {
+	color: $primary-font-color;
+	text-decoration: none;
+}
+//mobile view
+@media (max-width:1024px) {
+  .home-h1 {
+    font-size: $small-font-size;
+  }
+  .home-nav-a {
+    font-size: $medium-font-size;
+  }
+  .home-nav li {
+    padding-right: .5em;
+  }
+
+}
+//altered code for desktop view
+@media (min-width:1024px) {
+
+
+  .a1-home-header {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding-top: 2em;
+}
+  .home-nav {
+    font-size: $tiny-font-size;
+    display: inline-block;
+  }
+  .home-nav ul li {
+    width: auto;
+    display: inline-block;
+  }
+  .home-h1 {
+    font-size: $medium-font-size;
+  }
+  .appbox-logo {
+    max-width: 100%;
+    height: auto;
+}
+.appbox-logo-section {
+    height: 5em;
+    width: 5em;
+}
+.home-nav li {
+    padding-right: 1em;
+  }
+}

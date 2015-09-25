@@ -1,0 +1,248 @@
+Outline:
+Fonts for Sass
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+//Define colors here
+
+$white: #FFFFFF;
+
+$primary-font-color: $white;
+
+//night blue background color
+$background-A: #162327;
+//bright blue background color
+$background-B: #05c3f9;
+//sea blue background color
+$contrast-B: #037fa2;
+//deep mocha brown background color
+$background-C: #252525;
+$highest-light: #fff;
+//light gray
+$high-light: #bebebe;
+//medium gray
+$med-light: #888888;
+//dark gray background color
+$low-light: #383838;
+// Gold Start Color
+$bright-rating: #ffbf00;
+
+
+HOME SECTION: Background Color - #162327
+  > Header Part
+    APPBOX logo in upper left corner - PGN in img/ folder
+    nav bar in upper right corner - Roboto Regular 14px
+  > Titles section
+    Title "Best way to present your beautiful mobile app" -Raleway SemiBold 40px
+    Subheading "Appbox is full of ..." - Roboto Medium 14px
+    Subheading 2 "App Landing And..." - Roboto Medium 18px
+    > Watch the video section - screen color #555555
+      Play video button - Button color #05c3f9
+      Watch the video caption - Roboto Light 14px
+  > Image
+    Picture of phones
+> SVG divider
+  > Download area
+    > Title "Get it for free" - Raleway SemiBold 30px
+      Subheading "choose your native" - Roboto Light 16px
+    > Download App buttons *6
+      Google play button ** - Roboto Condensed 22px
+      iOS button ** - Roboto Condensed 22px button color #05c3f9
+> SVG divider
+  > Header
+    > * Underscored title
+      Title "Some Amazing ... " - Raleway Light - 32px #fff
+      Underscore - #888888
+  > product points charts (x4 each with hover and selection visual effects)
+    icon Container image ***
+      icon - gray: #888888 / blue: #05c3f9
+    title caption - Raleway Semibold 15px
+    title body **** paragraph - Roboto Light 12px
+> section end
+
+
+Section Two (Live conference support...): Background color: #05c3f9
+  > Header
+    NEW button ** (not clickable but looks like button) - Roboto Medium 12px Button border: #037fa2
+    Title "Live conference support" - Raleway SemiBold 28px
+    Paragraph text **** paragraph
+      > Download section
+        Title "Free download..." - Roboto Condensed 22px
+        image (arrow)
+        > Android box
+          Android icon
+          Android subheading - Roboto BoldCondensed 12px
+        > iOS box
+          iOS icon
+          iOS subheading - Roboto BoldCondensed 12px
+      > Image section
+        image
+>SVG divider
+  > Heading
+    > * Underscored title
+      Title "Why Choose ... " - Raleway Light 32px
+      Underscore
+  > Phone features - gray: #888888 / blue: #05c3f9
+    > Section one
+      > Why Choose Point (1 typeA) *8 (reversed)
+        > Text box
+          Title "App Store" - Raleway SemiBold 15px
+          text **** paragraph - Roboto Light 12px
+        > icon Container image ***
+          icon
+      > separation image
+      > Why Choose Point (2 typeB) - Raleway SemiBold 15px/- Roboto Light 12px
+      > separation image
+      > Why Choose Point (3 typeC) - Raleway SemiBold 15px/- Roboto Light 12px
+    > Image
+      image
+    > Section two
+      > Why Choose Point (4 typeB) *8 - Raleway SemiBold 15px/- Roboto Light 12px
+        > icon Container image ***
+            icon
+        > Text
+          Title "App Store"
+          text **** paragraph
+      > separation image
+      > Why Choose Point (5 typeB) - Raleway SemiBold 15px/- Roboto Light 12px
+      > separation image
+      > Why Choose Point (6 typeB) - Raleway SemiBold 15px/- Roboto Light 12px
+> SVG divider
+  > Header
+    > icon Container image (modified) ***
+      icon
+    > Titles - Background Color: #05c3f9
+      Title "App reviews" - Raleway Regular 32px
+      Subtitle "Read What" - Roboto Light 16px
+      text paragraph ****  - Roboto Italic 17px
+      > Team Member
+        portrait image *7 border color: #04aede fill color: #bebebe
+        > Text
+          Name "Oscar..." - Roboto COndensed 20px
+          Title "Director: BoxApp..." - Roboto Regular 12px
+
+Section Three (AppBox screenshots):
+Background Color top: #252525/ bottom: #383838
+  > Header (identical to section 2)
+    > * Underscored title
+      Title "Appbox Screenshots ... " - Raleway Light 32px
+      Underscore color - #888888
+> SVG divider (type 2)
+  Screenshot container
+    Image one
+    Image two
+    Image three
+  Navigation buttons
+    First nav button
+    Second nav button
+
+Section Four (More Apps by AppBox):
+  > Header - Background Color: #05c3f9
+    > * Underscored title
+      Title "More Apps by ... " - Raleway Light 32px
+      Underscore - #888888
+    > More Apps (x 4)
+      >App box
+        > descriptive section
+          Image
+          Hover for text **** paragraph hover color: #333333
+        > Information section - Roboto Light 12px
+          Title - Raleway SemiBold 15px
+          > rating Start color: #ff9c1c
+            rating image
+          Price - Roboto Condense 18px
+> SVG divider
+> SVG divider (type 2)
+  > Image container
+  Image
+  > Download app section
+  Background Color top: #05c3f9 / bottom:  #383838
+    > * Underscored title
+      Title "<strong>Download</strong> our App ... "Raleway light 32px
+      Underscore - #888888
+    subheading text "Choose your native" paragraph 2 *5 - Roboto Light 16px
+    > Download App buttons *6
+      Google play button ** - Roboto Condensed 22px
+      iOS button ** - Roboto Condensed 22px
+    > Subscribe container
+      Subheading text "subscribe to ..." - Raleway SemiBold 20px
+        > Email entry form - Roboto Light 14px text color: #666666
+          Input field
+          Submit button ** blue: #05c3f9 Roboto Medoum 12px
+          Underscore
+
+Section Five (Discounted Pricing): Background color: #252525
+  > Header
+    > * Underscored title
+      Title "Discounted Pricing ... " - Raleyway Light 32px
+      Underscore - #888888
+      text paragraph **** - Roboto Light 14px
+    > Pricing packages container (x 3)
+      > Standard Package
+        > Section 1
+          Title "Standard Package" - Raleway SemiBold 15px
+          > icon Container image *** Box color: #bbbbbb
+            > Price - gray: #888888 / blue: #05c3f9
+              Amount "$11" - Roboto BoldCondensed 26px
+              interval "per month" - Roboto Light 10px
+        > Section 2
+          > List container
+            five lines "unlimited support, easy ..." - Roboto Light 14px
+          Button "buy now" ** gray border: #888888 / border blue: #04aede blue fill: #05c3f9
+    > Professional packages
+      ...
+    > Corporate Package
+      ...
+> SVG divider
+  > Header: background blue #05c3f9
+    Title "Team Members" - Raleway Regular 32px
+    Subtitle "Our apps are made by..." - Roboto Light 16px
+    > Image container border blue: #04aede gray fill: #d2d2d2
+      Image
+  > Team (x 6)
+    > Team members
+        portrait image *7
+        > Text
+          Name "Oscar..." - Roboto Condensed 20px
+          Title "AppBox CEO" - Roboto Regular 12px
+        ...
+
+Section Six (AppBox Featured In): [REVIEWS]
+  > * Underscored title
+    Title "AppBox Featured In ... " Raleyway Light 32px
+    Underscore - #888888
+  > References placeholder
+    Image - image from img/ folder
+> SVG divider
+  > * Underscored title
+    Title "App Support" - Raleway Light 32px
+    Underscore - #888888
+  > Support container
+    Company contact info >
+      > Section (x 3) *8
+        > Icon
+          > icon Container image ***
+            icon fill: #252525 border: #848484 icon: #05c3f9
+        > Information
+          Title "Address" - Raleway SemiBold 15px
+          text paragraph *5 - Roboto Light 12px
+      ...
+    > Contact form
+      text paragraph **** Raleway Light 14px
+      > Form heading container
+      > Form input container
+          Name input - Roboto Light 12px
+          Email input - Roboto Light 12px
+        Form Message
+        Button "send" ** blue border: #0394be blue fill: #05c3f9 Roboto Medium 12px
+> SVG divider
+> SVG arrow link back to top
+> Footer section
+  APPBOX logo (version 2)
+  Copyright text paragraph **** Roboto Light 12px
+> Social Media Icon container (x6)
+  Social media Icon
+  ...
+
+Find all *5

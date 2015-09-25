@@ -1,0 +1,53 @@
+//re-useable button styling
+%circle-button {
+	@extend %circle;
+}
+%oval-button {
+    border-top: 5px solid $high-light;
+    border-bottom: 5px solid $high-light;
+    border-right: 1px solid $high-light;
+    border-left: 1px solid $high-light;
+    border-radius: 100px;
+    width: 10em;
+    margin: 0 auto;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+%google-play-button {
+	@extend %oval-button;
+	border-top-width: .2em;
+    padding-top: 1.5em;
+    border-bottom-width: .2em;
+    padding-bottom: 1.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+%iOS-app-button {
+	@extend %google-play-button;
+    //add this functionality through jquery when in hover state,
+    //changes background color on google button and ios button to bright blue
+	//background-color: $background-B;
+}
+.submit-button {
+  color: $highest-light;
+  background-color: transparent;
+  border-top: 5px solid $high-light;
+  border-bottom: 5px solid $high-light;
+  border-right: 1px solid $high-light;
+  border-left: 1px solid $high-light;
+  border-radius: 10%/50%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 3em;
+  padding-right: 3em;
+  width: 10em;
+  &:hover {
+    background-color: $background-B;
+    border-top: 5px solid $contrast-B;
+    border-bottom: 5px solid $contrast-B;
+    border-right: 1px solid $contrast-B;
+    border-left: 1px solid $contrast-B;
+  }
+}
