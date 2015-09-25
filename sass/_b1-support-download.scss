@@ -1,0 +1,157 @@
+.b1-support-download {
+  @extend %section-layouts;
+  background-color: $background-B;
+}
+
+.b1-part1 {
+	color: $primary-font-color;
+}
+.b1-h1 {
+	margin-top: 1em;
+	font-size: $large-font-size;
+	color: $primary-font-color;
+}
+.b1-p {
+	font-size: $small-font-size;
+	text-align: center;
+}
+.b1-h1-free {
+	font-size: $med-lg-font-size;
+	margin-top: 2em;
+}
+
+.icon-android {
+	color: $primary-font-color;
+}
+.icon-iOS {
+	color: $primary-font-color;
+}
+
+
+@media (max-width: 1040px) {
+	.b1-part1-button {
+		background-color: $white;
+		text-decoration: none;
+		color: $background-A;
+		border-top: 0.2em solid $contrast-B;
+	    border-bottom: 0.2em solid $contrast-B;
+	    border-right: 0.1em solid $contrast-B;
+	    border-left: 0.1em solid $contrast-B;
+	    border-radius: 6.25em;
+	    width: 10em;
+	    margin: 0 auto;
+	    padding-top: 0.4em;
+	    padding-bottom: 0.4em;
+	    padding-left: 1.5em;
+	    padding-right: 1.5em;
+	    margin-right: 12em;
+	}
+	.b1-arrow {
+		width: 5em;
+	}
+	.b1-part2 {
+	margin-bottom: 2em;
+}
+.b1-android-iOS {
+	margin-bottom: 5em;
+	display: flex;
+	flex-direction: row;
+}
+}
+
+@media (min-width: 1040px) {
+	.b1-h1-live {
+		font-size: $medium-font-size;
+		margin-bottom: .75em;
+	}
+	
+	.b1-p-live {
+		text-align: left;
+		line-height: 1.7em;
+		width:38em;
+	}
+	.b1-part1-button {
+		background-color: $white;
+		text-decoration: none;
+		color: $background-A;
+		border-top: 0.2em solid $contrast-B;
+	    border-bottom: 0.2em solid $contrast-B;
+	    border-right: 0.05em solid $contrast-B;
+	    border-left: 0.05em solid $contrast-B;
+	    border-radius: 3em;
+	    width: 5em;
+	    margin: 0 auto;
+	    padding-top: 0.45em;
+	    padding-bottom: 0.45em;
+	    padding-left: 1.36em;
+	    padding-right: 1.36em;
+	    font-size: .75em;
+	}
+	.b1-h1-free	{
+		font-size: 1.6em;
+		margin: 0;
+	}
+	.b1-arrow {
+		width: 4em;
+		margin-top: 6em;
+		 -ms-transform: rotate(-9deg); /* IE 9 */
+    -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
+    transform: rotate(-9deg);
+	}
+	.icon-android {
+		font-size: 2em;
+		margin: 0;
+	}
+	.icon-iOS {
+		font-size: 2em;
+		margin: 0;
+	}
+	.b1-android-txt {
+		font-size: .3em;
+	}
+	.b1-iOS-txt {
+		font-size: .3em;
+	}
+	.b1-support-download {
+		display:flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: space-around;
+	    align-content: flex-start;
+	    align-items: flex-start;
+	    padding-bottom: 0;
+	}
+	.blank-cell-pic {
+		max-width: 100%;
+    	height: auto;
+
+	}
+	.blank-cell-figure {
+		width: 26em;
+		height: 26em;
+
+	}
+	.b1-part2 {
+		display:flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    align-content: flex-start;
+	    align-items: center;
+	    text-align: left;
+	    max-width: 35em;
+	    margin-top: 4em;
+	}
+	.b1-part1 {
+		text-align: left;
+		margin: 0;
+	}
+	.home-icons-section {
+		width: 200px;
+		height:80px;
+		display:flex;
+	    flex-direction: row;
+	    margin-top: 2em;
+	    margin: 0;
+	    
+	}
+}

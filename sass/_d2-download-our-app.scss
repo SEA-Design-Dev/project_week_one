@@ -1,0 +1,93 @@
+.d2-download-our-app {
+  @extend %section-layouts;
+  @include bi-color-background ($background-C, $low-light);
+  background-color: $background-C;
+  font-family: 'Roboto', sans-serif;
+  color: $highest-light;
+  & .slant {
+    @extend %svg;
+    fill: $background-B;
+    background-color: transparent;
+  }
+  .home-google-ios{
+    @media (min-width: 1024px) {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    }
+    margin-top: 4em;
+    li:nth-of-type(1){
+      margin-bottom: 7em;
+    }
+  }
+  padding-bottom: 3em;
+}
+
+.subscribe-form {
+  color: $highest-light;
+  display: flex;
+  flex-direction: row;
+  input {
+    border: none;
+    border-bottom: 2px solid $background-C; 
+    background: none;
+    color: $highest-light;
+    width: 45%;
+    margin: auto;
+    display: flex;
+    height: 3em;
+    margin-left: 15%;
+   	margin-right: 0%;
+   	min-width: 30%;
+  }
+  .submit-button {
+  	width: 10%;
+  	max-width: 10%;
+  	text-align: center;
+  	background-color: $background-B;
+  	border-radius: 50px;
+  	border: 1px solid rgb(3, 148, 190);
+  	font-weight: bold;
+  	font-family: 'Roboto', sans-serif;
+  	color: $highest-light;
+  	text-decoration: none;
+  	margin-right: 15%
+  }
+}
+
+.d2-img{
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-top: 1em;
+}
+
+.d2-content{
+  margin-left: 0.5em;
+}
+
+.d2-content>p{
+text-align: center;
+margin-top: -10%;
+padding-top: 0%;
+margin-bottom: 0%;
+padding-bottom: 0%;
+font-size: 1.5em;
+}
+
+.d2-content>h3{
+  @media (min-width: 1024px) {
+  margin-top: 12em;
+  }
+  margin-top: 9.5em;
+  font-size: 1.5em;
+}
+
+.top-level-ul{
+  display: flex;
+    @media (min-width: 1024px) {
+    margin-left: 25%;
+  }
+  li{
+    margin-left: 2em;
+  }
+}
+

@@ -1,0 +1,113 @@
+.f2-reviews-contact {
+  @extend %section-layouts;
+  font-family: "Raleway", sans-serif;
+  background-color: $background-C;
+  color: $high-light;
+  & .slant {
+    @extend %svg;
+    fill: $low-light;
+    background-color: transparent;
+  }
+  .underlined-heading {
+    margin: 0 auto 8em auto;
+  }
+}
+
+.container-icon {
+  margin: auto;
+}
+.container-icon-caption {
+  max-width: 33%;
+  margin: auto;
+}
+
+.container-icon-title {
+  font-size: 0.75em;
+}
+
+.contact-article {
+  display: flex;
+  @media only screen and (min-device-width: 768px)  {
+    flex-direction: row;
+  }
+  @media only screen and (min-device-width: 1200px)  {
+    justify-content: space-around;
+  }
+}
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  p {
+    margin-bottom: 5em;
+  }
+  .submit-button {
+    margin-left: 0;    
+  }
+}
+
+.contact-info {
+  margin-right: 2%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  li {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media only screen and (min-device-width: 1200px)  {
+      flex-direction: row;
+    }
+  }
+}
+
+%contact-presentation {
+  display: flex;
+  border: none;
+  border-bottom: 2px solid $low-light; 
+  background: none;
+  color: $med-light;
+}
+.contact-form {
+  @extend %contact-presentation;
+  width: 100%;
+  margin: auto;
+  flex-direction: column;
+  border-bottom: none;
+}
+
+.contact-form-first-line {
+  @extend %contact-presentation;
+  flex-direction: row;
+  height: 6em;
+  border-bottom: none;
+  & input {
+    @extend %contact-presentation;
+    width: 100%;
+    margin-bottom: 3em;
+    margin-right: 5%;
+  }
+}
+
+textarea {
+  @extend %contact-presentation;
+  height: 9em;
+  margin-bottom: 3em;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: $low-light;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: $low-light;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: $low-light;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: $low-light;
+}

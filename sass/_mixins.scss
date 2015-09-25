@@ -1,0 +1,3 @@
+@mixin bi-color-background ($topColor, $bottomColor) {
+  background-image: linear-gradient(5deg, $bottomColor 50%, $topColor 50%);
+}

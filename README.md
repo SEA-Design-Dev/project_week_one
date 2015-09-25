@@ -49,4 +49,14 @@ There are three individual deliverables:
 
 Projects are due to be completed by Friday NOON! Take lunch and we will have demo reviews at 3pm. Please no commits after NOON or we will have to be angry O_O
 
-Demos your completed project; things you learned and approaches you took to solve the problem will be expected to be presented. 
+Demos your completed project; things you learned and approaches you took to solve the problem will be expected to be presented.
+
+
+Team:
+Sredna Kunowski
+Lyle Scott
+Benton Green
+Zach Gordon
+
+Sources from the interwebz:
+-Paul Underwood from http://www.paulund.co.uk/smooth-scroll-to-internal-links-with-jquery for his beautiful smooth scrolling in jquery code. This was used for the navigation bar at the top of the page. 

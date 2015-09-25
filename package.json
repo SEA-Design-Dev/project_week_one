@@ -1,0 +1,25 @@
+{
+  "name": "project_week_one",
+  "version": "1.0.0",
+  "description": "First project for Code Fellows Front End Development Accelerator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZachKGordon/project_week_one.git"
+  },
+  "author": "Zach Gordon, Lyle Scott, Benton Green, Sredna Kunowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZachKGordon/project_week_one/issues"
+  },
+  "homepage": "https://github.com/ZachKGordon/project_week_one#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4",
+    "node": "0.0.0",
+    "sass": "^0.5.0"
+  }
+}
